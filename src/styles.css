@@ -1,0 +1,65 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.Header {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+/* .blockofcompany {
+  background: #131524;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 16px 0px #1f1d1dcf;
+      max-width: 480px;
+      min-width: 340px;
+  } */
+/* tr.ig-chart-legend-item {
+  display: inline-flex;
+  padding-right: 10px;
+  align-items: flex-end;
+}
+tr.ig-chart-legend-item canvas {
+  display: flex;
+} */
+.companyDetailer {
+  margin-bottom: 0.5rem;
+}
+.titleofcompany {
+  color: #ffeb3b;
+}
+.labelofcompany {
+  color: white;
+  font-size: 0.7rem;
+}
+.labelofsubdetails {
+  font-size: 0.7rem;
+  padding-right: 5px;
+}
+/* .subdetails {
+    padding-right: 10px;
+      font-size: 15px;
+  } */
+
+html,
+body {
+  font-family: "Arial";
+  letter-spacing: 0.8px;
+}
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.aligner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "symbol": "IRCTC",
+    "quantity": 250,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 2,
+    "symbol": "BEL",
+    "quantity": 150,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 3,
+    "symbol": "RVNL",
+    "quantity": 60,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 4,
+    "symbol": "SBIN",
+    "quantity": 105,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 5,
+    "symbol": "SBICARD",
+    "quantity": 10,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 6,
+    "symbol": "ITC",
+    "quantity": 15,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 7,
+    "symbol": "BLS",
+    "quantity": 65,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 8,
+    "symbol": "AXISBANK",
+    "quantity": 78,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 10,
+    "symbol": "MARICO",
+    "quantity": 22,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 11,
+    "symbol": "IRCTCD",
+    "quantity": 250,
+    "avgPrice": 100,
+    "currentPrice": 350
+  },
+  {
+    "id": 12,
+    "symbol": "IRCTCA",
+    "quantity": 250,
+    "avgPrice": 100,
+    "currentPrice": 350
+  }
+]
