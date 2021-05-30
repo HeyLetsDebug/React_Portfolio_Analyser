@@ -2,7 +2,7 @@ import "./styles.css";
 import Header from "./header.js";
 import CompanyList from "./portfolio.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Row, Col, CardColumns } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import PieChartLegend from "./chartmaker.js";
 import SectorialPieChart from "./SectorialChart.js";
 
@@ -28,15 +28,15 @@ export default function App() {
       <Header />
       <div className="p-4">
         <Row>
+          <CompanyList />
+        </Row>
+
+        <Row>
           <Col>
-            {/* <CardColumns> */}
-            <CompanyList />
-            {/* </CardColumns> */}
+            <PieChartLegend />
           </Col>
           <Col>
-            <Row>
-              <PieChartLegend />
-              {/* <IgrPieChart
+            {/* <IgrPieChart
                 dataSource={pieData}
                 labelMemberPath="title"
                 labelsPosition="OutsideEnd"
@@ -50,10 +50,7 @@ export default function App() {
                 othersCategoryThreshold="0"
               />
               <IgrItemLegend ref={IgrItemLegend.legend} /> */}
-            </Row>
-            <Row>
-              <SectorialPieChart />
-            </Row>
+            <SectorialPieChart />
           </Col>
         </Row>
       </div>
