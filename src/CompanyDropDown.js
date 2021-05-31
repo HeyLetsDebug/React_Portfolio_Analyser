@@ -52,11 +52,11 @@ function getSuggestions(value) {
 }
 
 function getSuggestionValue(suggestion) {
-  return suggestion.name;
+  return suggestion.compName;
 }
 
 function renderSuggestion(suggestion) {
-  return <span>{suggestion.name}</span>;
+  return <span>{suggestion.compName}</span>;
 }
 
 export default class CompanyNamer extends React.Component {
