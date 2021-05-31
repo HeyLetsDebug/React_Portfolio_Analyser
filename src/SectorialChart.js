@@ -4,7 +4,7 @@ import { IgrItemLegendModule } from "igniteui-react-charts";
 import { IgrPieChart } from "igniteui-react-charts";
 import { IgrPieChartModule } from "igniteui-react-charts";
 import props from "./data/companylist.json";
-import { Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 IgrPieChartModule.register();
 IgrItemLegendModule.register();
 
@@ -42,7 +42,7 @@ export default class SectorialPieChart extends React.Component {
   render() {
     return (
       <>
-        <Col className="aligner">
+        <Col xl={6} lg={6} md={6} sm={12} xs={12} className="aligner">
           <span className="igLegend-title">Sectorial Distribution</span>
           <IgrPieChart
             ref={this.onChartRef}
