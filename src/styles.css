@@ -21,14 +21,14 @@
       max-width: 480px;
       min-width: 340px;
   } */
-/* tr.ig-chart-legend-item {
+tr.ig-chart-legend-item {
   display: inline-flex;
   padding-right: 10px;
   align-items: flex-end;
 }
 tr.ig-chart-legend-item canvas {
   display: flex;
-} */
+}
 .companyDetailer {
   margin-bottom: 0.5rem;
 }
@@ -62,4 +62,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (min-width: 768) {
+  .alignRight {
+    text-align: right;
+  }
 }

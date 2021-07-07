@@ -4,11 +4,11 @@
 
 .react-autosuggest__input {
   padding: 10px 20px;
-  font-family: Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
   border: 1px solid #aaa;
   border-radius: 4px;
+  width: 100%;
 }
 
 .react-autosuggest__input--focused {
@@ -28,7 +28,6 @@
   display: block;
   border: 1px solid #aaa;
   background-color: #fff;
-  font-family: Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
   border-bottom-left-radius: 4px;

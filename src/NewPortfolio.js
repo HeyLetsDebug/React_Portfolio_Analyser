@@ -18,11 +18,11 @@ export default function CompanyList() {
           >
             <Card.Header as="h6" className="p-2">
               <Row>
-                <Col>
+                <Col lg={8} md={8} sm={12}>
                   <span className="labelofcompany">Company : </span>
                   <span className="titleofcompany">{lis.symbol}</span>
                 </Col>
-                <Col style={{ textAlign: "right" }}>
+                <Col lg={4} md={4} sm={12} className="alignRight">
                   <span className="labelofsubdetails">Qty :</span>
                   <span>{lis.quantity}</span>
                 </Col>
