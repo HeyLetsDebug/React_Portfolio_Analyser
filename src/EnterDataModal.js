@@ -3,6 +3,7 @@ import "./styles.css";
 import { Modal, Button, Form, Col, Control } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CompanyNamer from "./CompanyDropDown.js";
+import AutoSuggestCompany from "./AutoSuggestCompany.js";
 
 class EnterDataModal extends Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class EnterDataModal extends Component {
     return (
       <>
         <Button variant="primary" onClick={this.openModal}>
-          Launch demo modal
+          Add To Portfolio
         </Button>
         <Modal
           show={this.state.isOpen}
@@ -56,7 +57,8 @@ class EnterDataModal extends Component {
           <Modal.Body>
             <Form onSubmit={this.handleSubmit}>
               <Form.Group as={Col}>
-                <CompanyNamer />
+                {/* <CompanyNamer /> */}
+                <AutoSuggestCompany />
               </Form.Group>
               <Form.Group as={Col}>
                 <Form.Control

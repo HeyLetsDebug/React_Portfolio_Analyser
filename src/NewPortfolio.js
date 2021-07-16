@@ -11,7 +11,6 @@ export default function CompanyList() {
       {props.map((lis) => (
         <Col xl={12} lg={12} md={12} sm={12} xs={12} key={lis.id.toString()}>
           <Card
-            bg="dark"
             text="white"
             className="companyDetailer"
             key={lis.symbol.toString()}

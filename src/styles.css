@@ -29,8 +29,9 @@ tr.ig-chart-legend-item {
 tr.ig-chart-legend-item canvas {
   display: flex;
 }
-.companyDetailer {
+.card.companyDetailer {
   margin-bottom: 0.5rem;
+  background-color: #040e48;
 }
 .titleofcompany {
   color: #ffeb3b;
