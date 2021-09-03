@@ -5,14 +5,15 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "bootstrap": "4.6.0",
-    "igniteui-react-charts": "16.13.1",
-    "igniteui-react-core": "16.13.1",
+    "bootstrap": "5.0.2",
+    "igniteui-react-charts": "16.14.1",
+    "igniteui-react-core": "16.14.1",
     "react": "17.0.2",
+    "react-autocomplete": "1.8.1",
     "react-autosuggest": "10.1.0",
-    "react-bootstrap": "1.6.0",
+    "react-bootstrap": "1.6.1",
     "react-dom": "17.0.2",
-    "react-scripts": "4.0.0"
+    "react-scripts": "4.0.3"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",

@@ -1,7 +1,6 @@
 import "./autosuggest.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import compData from "./data/shareslist.json";
-import { Form } from "react-bootstrap";
 import Autosuggest from "react-autosuggest";
 import React from "react";
 
@@ -12,28 +11,6 @@ const fetchCompData = compData.map((data, key) => {
     compIndustry: data.compIndustry
   };
 });
-// export default function CompanyDropDown() {
-//   // const [companyNames, companyData] = useState([]);
-//   // this.companyData = { fetchCompData };
-//   return (
-//     <>
-//       <Form.Group>
-//         <Form.Control as="text" id="data1">
-//           {compData.map((result) => (
-//             <option key={result.compSymbol}>{result.compName}</option>
-//           ))}
-//         </Form.Control>
-//       </Form.Group>
-//       {/*
-//       <input type="text" list="data1" placeholder="Search Company" />
-//       <datalist id="data1">
-//         {compData.map((result) => (
-//           <option>{result.compName}</option>
-//         ))}
-//       </datalist> */}
-//     </>
-//   );
-// }
 
 function escapeRegexCharacters(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -48,7 +25,10 @@ function getSuggestions(value) {
 
   const regex = new RegExp("^" + escapedValue, "i");
 
-  return fetchCompData.filter((compList) => regex.test(compList.compName));
+  return fetchCompData.filter(
+    (compList) =>
+      regex.test(compList.compName) || regex.test(compList.compSymbol)
+  );
 }
 
 function getSuggestionValue(suggestion) {

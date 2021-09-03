@@ -4,8 +4,8 @@ import Header from "./header.js";
 import CompanyList from "./NewPortfolio.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from "react-bootstrap";
-import PieChartLegend from "./chartmaker.js";
-import SectorialPieChart from "./SectorialChart.js";
+import PieChartLegend from "./PieCharts/PortfolioChart.js";
+import SectorialPieChart from "./PieCharts/SectorialChart.js";
 
 // import { IgrItemLegend } from "igniteui-react-charts";
 // import { IgrItemLegendModule } from "igniteui-react-charts";
@@ -29,7 +29,7 @@ export default function App() {
       <Header />
       <div className="p-4">
         <Row>
-          <Col xl={4} lg={4} md={4} sm={4} xs={12}>
+          <Col>
             <Row>
               <CompanyList />
             </Row>

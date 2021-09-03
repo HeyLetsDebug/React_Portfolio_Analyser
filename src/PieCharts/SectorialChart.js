@@ -3,7 +3,7 @@ import { IgrItemLegend } from "igniteui-react-charts";
 import { IgrItemLegendModule } from "igniteui-react-charts";
 import { IgrPieChart } from "igniteui-react-charts";
 import { IgrPieChartModule } from "igniteui-react-charts";
-import props from "./data/companylist.json";
+import props from "../data/companylist.json";
 import { Col } from "react-bootstrap";
 IgrPieChartModule.register();
 IgrItemLegendModule.register();
@@ -47,21 +47,20 @@ export default class SectorialPieChart extends React.Component {
           <IgrPieChart
             ref={this.onChartRef}
             dataSource={this.state.pieData}
-            labelMemberPath="title"
-            labelsPosition="OutsideEnd"
-            labelExtent={30}
+            // labelMemberPath="title"
+            // labelsPosition="OutsideEnd"
+            // labelExtent={30}
             valueMemberPath="value"
             legendLabelMemberPath="title"
-            width="500px"
-            height="500px"
+            width="400px"
+            height="350px"
             radiusFactor={0.6}
-            startAngle={0}
+            startAngle={60}
             othersCategoryThreshold="0"
           />
+
+          <IgrItemLegend ref={this.onLegendRef} />
         </Col>
-        {/* <Col lg={2} md={2}>
-            <IgrItemLegend ref={this.onLegendRef} />
-          </Col> */}
       </>
     );
   }
